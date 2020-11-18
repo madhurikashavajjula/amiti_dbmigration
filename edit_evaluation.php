@@ -233,7 +233,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                     <select class="form-control" name="category" id="category" required>
                                     <option value="<?php echo $category ?>" selected><?php echo $category ?></option>
 <?php
-$query = "select * from tbl_category ORDER BY id DESC";
+$query = "select * from tblevaluationcategories ORDER BY id DESC";
 	$stmt = $conn->prepare($query);
 	$stmt->execute();
 	$i = 1;
